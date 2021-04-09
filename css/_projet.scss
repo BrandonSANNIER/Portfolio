@@ -1,66 +1,196 @@
-/*--- HEADER PROJET ---*/ 
+/*--- HEADER PROJET ---*/
 
-.header_projet{
-    .content_img_projet{
-        overflow: hidden;
-        position: absolute;
-        width: 600px;
-        height: 700px;
-        top: 0;
-        left: 35%;
+.header_projet {
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 36px;
+        letter-spacing: 5px;
     }
-    .title_header_projet{
-        margin-top: 33%;
-        text-align: center;
-        h2{
-            text-transform: uppercase;
-            font-size: 36px;
-            letter-spacing: 5px;
-        }
-        p{
-            font-size: 16px;
-            font-weight: 300;
-        }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
     }
 }
 
-/*--- CONTENT PROJET ---*/ 
+/*--- CONTENT PROJET ---*/
 
-.content_projet{
+.content_projet {
     display: flex;
-    margin-top: 70px;
-    .mockup{
+    margin: 100px 0;
+
+    .mockup {
         width: 50%;
-        height: 1000px;
-        background-color: red;
+        height: auto;
+        background-color: $color-hover;
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
-    .desc_projet{
-        margin-left: 30px;
+
+    .desc_projet {
+        margin-left: 40px;
         width: 50%;
-        p{
+
+        p {
             line-height: 25px;
             margin-bottom: 40px;
-            span{
+
+            span {
                 text-transform: uppercase;
             }
         }
-        h5{
+
+        h5 {
             font-size: 17px;
             text-transform: uppercase;
             font-weight: bold;
             margin-bottom: 20px;
         }
-        a{
+        
+        ul{
+            margin-bottom: 40px;
+            li{
+                list-style-type: none;
+                line-height: 25px;
+            }
+        }
+        
+
+        a {
             text-decoration: none;
-            color: #000;
+            color: $base-color;
             text-transform: uppercase;
             padding: 15px 20px;
-            border: solid 1px #000;
+            border: solid 1px $base-color;
             transition: all .5s;
-            &:hover{
-                background-color: #000;
+
+            &:hover {
+                background-color: $base-color;
                 color: #fff;
-                
+
+            }
+        }
+    }
+}
+
+
+/*--- MOCKUP MOBILE ---*/
+
+.mockup_mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 200px 0;
+
+    .mobile {
+        display: inline-block;
+        margin: 0 30px;
+        padding: 50px 20px 16px;
+        position: relative;
+        width: 280px;
+        height: 580px;
+        border-radius: 30px;
+        background: #f0f0f0;
+        background: linear-gradient(135deg, #f0f0f0, #fafafa);
+        box-shadow: 24px 40px 80px 11px rgba(0, 0, 0, 0.10);
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: #d7d7d7;
+            top: 15px;
+            left: calc(50% - 48px);
+            height: 8px;
+            width: 96px;
+            border-radius: 10px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            left: calc(50% - 20px);
+            border: solid 4px #d7d7d7;
+            background-color: #ffffff;
+            bottom: 15px;
+        }
+
+        img {
+            width: 100%;
+            height: 500px;
+        }
+    }
+}
+
+.nav_projet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn_projet_l {
+        text-align: left;
+        width: 20%;
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $base-color;
+            font-size: 16px;
+            font-weight: 300;
+            transition: all .3s;
+
+            span {
+                font-size: 30px;
+                font-weight: 500;
+            }
+
+            &:hover {
+                color: $color-hover;
+            }
+        }
+    }
+
+    .btn_projet_home {
+        a {
+            text-decoration: none;
+            color: $base-color;
+
+            i {
+                font-size: 40px;
+                transition: all .3s;
+
+                &:hover {
+                    color: $color-hover;
+                }
+            }
+        }
+    }
+
+    .btn_projet_r {
+        text-align: right;
+        width: 20%;
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $base-color;
+            font-size: 16px;
+            font-weight: 300;
+            transition: all .3s;
+
+            span {
+                font-size: 30px;
+                font-weight: 500;
+            }
+
+            &:hover {
+                color: $color-hover;
             }
         }
     }

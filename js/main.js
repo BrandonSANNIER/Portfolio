@@ -1,5 +1,5 @@
 $(window).load(function () {
     $(".loader").animate({
-        top: '1000px',
+        top: '100vh',
     }, 550)
 })

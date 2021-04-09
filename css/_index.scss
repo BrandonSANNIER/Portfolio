@@ -4,13 +4,14 @@
 
 
 $base-color: #111111;
-$color-hover: #2196F3;
+$color-hover: #9E9E9E;
 
 * {
     margin: 0;
     padding: 0;
     cursor: url(../img/cursor.png), pointer;
     font-family: "Jost", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .loader {
@@ -57,7 +58,7 @@ nav {
             a {
                 width: 100%;
                 font-size: 19px;
-                margin-left: 40px;
+                margin: 0 20px;
                 text-decoration: none;
                 color: $base-color;
 
@@ -70,6 +71,7 @@ nav {
 }
 
 /*--- SOCIAL MENU ---*/
+
 .social_menu {
     position: fixed;
     z-index: 1;
@@ -102,24 +104,25 @@ header {
     .fp-tableCell {
         vertical-align: initial;
     }
-
-    .img_header {
-        align-content: center;
-        background-image: url(../img/header.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 100px 60px 0 60px;
+    .media_header {
         width: 93.5%;
-        height: 100%;
-
-        h1 {
-            z-index: 1;
-            padding: 80px 100px;
-            color: #fff;
-            font-weight: 300;
-            font-size: 24px;
+        margin: 100px 60px 0 60px;
+        &:before{
+            background-color: black;
         }
-
+        video{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    h1 {
+        top: 15%;
+        left: 8%;
+        position: absolute;
+        z-index: 1;
+        color: #fff;
+        font-weight: 300;
+        font-size: 24px;
     }
 
     .scroll_wrapper {
@@ -217,6 +220,7 @@ header {
 }
 
 /*--- ABOUT ---*/
+
 .about {
     background-color: #fff;
 
@@ -250,7 +254,7 @@ header {
             margin-top: 30px;
             font-size: 30px;
             font-weight: 300;
-            width: 400px;
+            width: 100%;
 
             li {
                 padding: 20px 0px;
@@ -266,7 +270,7 @@ header {
 
                     &:hover {
                         color: $color-hover;
-                        border-bottom: solid 1px #2196F3;
+                        border-bottom: solid 1px $color-hover;
                     }
 
                     i {
@@ -282,29 +286,27 @@ header {
 .portfolio {
     .content_portfolio {
         display: flex;
+        flex-direction: row-reverse;
         flex-wrap: wrap;
         justify-content: center;
 
         a {
             display: block;
             background-color: #2196f3;
-            width: 400px;
+            width: 370px;
             height: 500px;
             margin: 0 50px;
-            border: solid 2px #fff;
-            transition: all .5s;
-
-            &:nth-child(2) {
-                background-color: #f44336;
-            }
-
-            &:nth-child(3) {
-                background-color: #ff9800;
-            }
-
+            transform: scale(1);
+            transition: .3s ease-in-out;
             &:hover {
-                border: solid 2px $base-color;
+                transform: scale(1.05);
             }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            
+    
         }
     }
 
@@ -321,7 +323,7 @@ header {
             text-decoration: none;
             color: #fff;
             border: solid 1px $base-color;
-            transition: all .2s;
+            transition: all .3s;
 
             &:hover {
                 background-color: #fff;
@@ -395,6 +397,7 @@ header {
             padding: 20px 40px;
             font-size: 18px;
             color: $base-color;
+            transition: all .3s;
 
             &:hover {
                 background-color: $base-color;
