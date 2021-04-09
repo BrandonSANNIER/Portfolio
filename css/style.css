@@ -578,6 +578,11 @@ header .scroll_wrapper svg:hover {
   text-transform: uppercase;
 }
 
+.article_about article .section_article a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 .article_about article #bg_article_1 {
   background-color: #f44336;
 }
@@ -677,43 +682,34 @@ footer .content_bottom_footer .link_footer a {
 }
 
 .portfolio .bloc_projet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #2196F3;
-  width: 500px;
+  width: 514px;
   height: 700px;
   margin: 50px;
+  border: solid 2px #fff;
 }
 
-.portfolio .bloc_projet:nth-child(2) {
-  background-color: red;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: 500px;
-  height: 600px;
+.portfolio .bloc_projet:hover {
+  border: solid 2px #000;
 }
 
-.portfolio .bloc_projet:nth-child(3) {
-  background-color: black;
-  width: 500px;
-  height: 600px;
+.portfolio .bloc_projet p {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  opacity: 0;
 }
 
-.portfolio .bloc_projet:nth-child(4) {
-  background-color: blue;
-}
-
-.portfolio .bloc_projet:nth-child(5) {
-  background-color: green;
-}
-
-.portfolio .bloc_projet:nth-child(6) {
-  background-color: yellow;
-}
-
-.portfolio .bloc_projet:nth-child(7) {
-  background-color: aqua;
-}
-
-.portfolio .bloc_projet:nth-child(8) {
-  background-color: indigo;
+.portfolio .bloc_projet p:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
