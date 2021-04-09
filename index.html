@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon SANNIER">
+        <meta name="description" content="">
+        <title>Portfolio</title>
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    </head>
+    <body>
+        <main>
+            <!--------- NAVBAR --------->
+            <nav>
+                <img src="img/logo.png" alt="logo">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--------- SOCIAL MENU --------->
+            <div class="social_menu">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+            </div>
+
+            <div id="fullpage">
+                <!--------- HEADER --------->
+                <header class="section">
+                    <div class="img_header">
+                        <h1>Bonjour, je suis développeur front-end dans le Pas-de-Calais.<br>Bienvenue sur mon portfolio !</h1>
+                    </div>
+                    <div class="scroll_wrapper">
+                        <div class="mouse">
+                            <p>scroll</p>
+                        </div>
+                    </div>
+                </header>
+
+                <!--------- ABOUT --------->
+                <section class="about section">
+                    <div class="content_about">
+                        <h2>Je réalise des sites internet avec le souci du détail et un rendu fidèle au design.</h2>
+                        <ul>
+                            <li><a href="#">01. Intégrateur HTML - CSS - JS</a></li>
+                            <li><a href="#">02. WordPress</a></li>
+                            <li><a href="#">03. Intégrateur HTML - CSS - JS</a></li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <!--------- PORTFOLIO --------->
+                <section class="portfolio section">
+                    <div class="content_portfolio">
+                        <div class="img_portfolio"></div>
+                        <div class="img_portfolio"></div>
+                        <div class="img_portfolio"></div>
+                        <!-- <img src="img/img1" alt="1">
+                        <img src="img/img2" alt="2">
+                        <img src="img/img3" alt="3"> -->
+                    </div>
+                    <div class="btn_portfolio">
+                        <a href="#">Portfolio</a>
+                    </div>
+                </section>
+                
+                <!--------- CONTACT ---------> 
+                <section class="contact section">
+                    <div class="content_contact">
+                        <h2>Démarrons un projet ensemble.</h2>
+                        <h3>Je suis intéressé par les opportunités d'indépendant. Cependant, si vous avez d'autres demandes ou questions, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous.</h3>
+                        <form action="" method="GET">
+                            <input type="text" id="name" placeholder="Nom" required>
+                            <input type="email" id="email" placeholder="E-mail" required>
+                            <input type="text" id="sujet" placeholder="Sujet" required>
+                            <textarea id="msg" id="message" placeholder="Message" required></textarea>
+                            <input type="submit" value="Envoyer">
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <script type="text/javascript" src="js/fullpage.js"></script>
+        <script>
+            new fullpage('#fullpage', {
+                navigation: true,
+                responsiveWidth: 700,
+                anchors: ['accueil', 'about', 'portfolio','contact'],
+                parallax: true
+            });
+        </script>
+    </body>
+</html>

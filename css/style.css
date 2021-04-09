@@ -1,0 +1,268 @@
+body, ul, li, p, h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/*--- NAV ---*/
+nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 88%;
+  top: 30px;
+  left: 100px;
+  line-height: 50px;
+  z-index: 1;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  width: 100%;
+  font-size: 19px;
+  font-family: 'Jost', sans-serif;
+  margin-left: 40px;
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a:hover {
+  border-bottom: solid 1px #000;
+}
+
+/*--- SOCIAL MENU ---*/
+.social_menu {
+  position: fixed;
+  z-index: 1;
+  top: 42%;
+}
+
+.social_menu li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.social_menu li a {
+  padding: 15px;
+}
+
+.social_menu li a i {
+  color: #000;
+  font-size: 32px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.social_menu li a i:hover {
+  color: red;
+}
+
+/*--- HEADER ---*/
+header .fp-tableCell {
+  vertical-align: initial;
+}
+
+header .img_header {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-image: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 100px 60px 0 60px;
+  width: 93.5%;
+  height: 100%;
+}
+
+header .img_header h1 {
+  z-index: 1;
+  padding: 100px 100px;
+  color: #fff;
+  font-family: "Jost";
+  font-weight: 300;
+  font-size: 24px;
+}
+
+header .img_header .scroll_wrapper {
+  visibility: hidden;
+}
+
+/*--- ABOUT ---*/
+.about {
+  background-color: #fff;
+}
+
+.about .content_about {
+  padding: 100px 200px;
+  width: 600px;
+}
+
+.about .content_about h2 {
+  font-family: "Jost", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.about .content_about ul {
+  list-style: none;
+  font-family: "Jost", sans-serif;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 300;
+  width: 400px;
+}
+
+.about .content_about ul li {
+  padding: 20px 0px;
+}
+
+.about .content_about ul li a {
+  width: 20%;
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #000;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.about .content_about ul li a:hover {
+  color: red;
+  border-bottom: solid 1px red;
+}
+
+/*--- PORTFOLIO ---*/
+.portfolio .content_portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .content_portfolio .img_portfolio {
+  background-color: #2196f3;
+  width: 400px;
+  height: 500px;
+  margin: 0 50px;
+}
+
+.portfolio .content_portfolio .img_portfolio:nth-child(2) {
+  background-color: #f44336;
+}
+
+.portfolio .content_portfolio .img_portfolio:nth-child(3) {
+  background-color: #ff9800;
+}
+
+.portfolio .btn_portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .btn_portfolio a {
+  margin-top: 50px;
+  background-color: black;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border: solid 1px #000;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.portfolio .btn_portfolio a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/*--- contact ---*/
+.contact {
+  background-color: #fff;
+}
+
+.contact .content_contact {
+  padding: 100px 200px;
+  width: 700px;
+}
+
+.contact .content_contact h2 {
+  font-family: "Jost", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.contact .content_contact h3 {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.contact .content_contact input, .contact .content_contact textarea {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+}
+
+.contact .content_contact input:focus, .contact .content_contact textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.contact .content_contact input[type=text], .contact .content_contact input[type=email], .contact .content_contact textarea {
+  width: 100%;
+  padding: 0 0 10px 5px;
+  border: none;
+  border-bottom: solid 1px #000;
+  margin-bottom: 35px;
+}
+
+.contact .content_contact input[type=submit] {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 1px #000;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  font-size: 18px;
+}
+
+.contact .content_contact input[type=submit]:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact .content_contact #name {
+  width: 45%;
+  margin-right: 8%;
+}
+
+.contact .content_contact #email {
+  width: 45%;
+}
+
+.contact .content_contact #message {
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
