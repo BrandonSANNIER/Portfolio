@@ -2,23 +2,34 @@
 //     @include font(35px, 700, 40px, $color-creme);
 // }
 
+
 $base-color: #111111;
 $color-hover: #2196F3;
 
-*{
+* {
     margin: 0;
     padding: 0;
     cursor: url(../img/cursor.png), pointer;
     font-family: "Jost", sans-serif;
 }
 
-.clear{
+.loader {
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.clear {
     clear: both;
 }
 
 
 /*--- NAV ---*/
-nav{
+nav {
     position: fixed;
     display: flex;
     align-items: center;
@@ -28,25 +39,29 @@ nav{
     left: 100px;
     line-height: 50px;
     z-index: 1;
-    a{
-        svg{
+
+    a {
+        svg {
             width: 45px;
             height: 55px;
             fill: $base-color;
         }
     }
-    
-    ul{
+
+    ul {
         display: flex;
-        li{
+
+        li {
             list-style: none;
-            a{
+
+            a {
                 width: 100%;
                 font-size: 19px;
                 margin-left: 40px;
                 text-decoration: none;
                 color: $base-color;
-                &:hover{
+
+                &:hover {
                     border-bottom: solid 1px $base-color;
                 }
             }
@@ -55,21 +70,25 @@ nav{
 }
 
 /*--- SOCIAL MENU ---*/
-.social_menu{
+.social_menu {
     position: fixed;
     z-index: 1;
     top: 42%;
-    li{
+
+    li {
         list-style-type: none;
         margin-bottom: 15px;
-        a{
+
+        a {
             padding: 15px;
-            i{
+
+            i {
                 color: $base-color;
                 font-size: 32px;
                 cursor: pointer;
                 transition: all .3s;
-                &:hover{
+
+                &:hover {
                     color: $color-hover;
                     cursor: url(../img/cursor.png), pointer;
                 }
@@ -79,11 +98,12 @@ nav{
 }
 
 /*--- HEADER ---*/
-header{
+header {
     .fp-tableCell {
         vertical-align: initial;
     }
-    .img_header{
+
+    .img_header {
         align-content: center;
         background-image: url(../img/header.png);
         background-repeat: no-repeat;
@@ -91,23 +111,26 @@ header{
         margin: 100px 60px 0 60px;
         width: 93.5%;
         height: 100%;
-        h1{
+
+        h1 {
             z-index: 1;
             padding: 80px 100px;
             color: #fff;
             font-weight: 300;
             font-size: 24px;
         }
-        
+
     }
-    .scroll_wrapper{
+
+    .scroll_wrapper {
         position: absolute;
         left: 50%;
         bottom: 10px;
         transform: translateX(-49%);
         text-align: center;
         z-index: 1;
-        svg{
+
+        svg {
             fill: #fff;
             margin: 0 auto;
             position: relative;
@@ -115,60 +138,76 @@ header{
             height: 70px;
             border-radius: 160px;
             background-size: 225%;
-            animation: c 5s linear infinite,e 5s ease-out infinite;
+            animation: c 5s linear infinite, e 5s ease-out infinite;
             transition: all .5s;
-            &:hover{
+
+            &:hover {
                 fill: $color-hover;
             }
+
             @keyframes c {
                 0% {
                     background-position: 0 100%;
                 }
+
                 20% {
                     background-position: 0 0;
                 }
-                21% {
-                }
+
+                21% {}
+
                 29.99% {
                     background-position: 0 0;
                 }
+
                 30% {
                     background-position: 0 100%;
                 }
+
                 50% {
                     background-position: 0 0;
                 }
+
                 59% {
                     background-position: 0 0;
                 }
+
                 60% {
                     background-position: 0 100%;
                 }
+
                 80% {
                     background-position: 0 0;
                 }
-                81% {
-                }
+
+                81% {}
             }
+
             @keyframes e {
                 0% {
                     transform: translateY(0);
                 }
+
                 20% {
                     transform: translateY(.4rem);
                 }
+
                 30% {
                     transform: translateY(0);
                 }
+
                 50% {
                     transform: translateY(.4rem);
                 }
+
                 60% {
                     transform: translateY(0);
                 }
+
                 80% {
                     transform: translateY(.4rem);
                 }
+
                 90% {
                     transform: translateY(0);
                 }
@@ -178,21 +217,24 @@ header{
 }
 
 /*--- ABOUT ---*/
-.about{
+.about {
     background-color: #fff;
-    .content_about{
+
+    .content_about {
         display: flex;
         flex-direction: column;
         padding: 100px 200px;
         width: 600px;
-        h2{
+
+        h2 {
             display: block;
             position: relative;
             font-size: 48px;
             font-weight: 600;
             padding-top: 40px;
             color: $base-color;
-            &:before{
+
+            &:before {
                 position: absolute;
                 content: "";
                 top: 0;
@@ -202,27 +244,32 @@ header{
                 background-color: $base-color;
             }
         }
-        ul{
+
+        ul {
             list-style: none;
             margin-top: 30px;
             font-size: 30px;
             font-weight: 300;
             width: 400px;
-            li{
+
+            li {
                 padding: 20px 0px;
-                a{
-                    display:block;
+
+                a {
+                    display: block;
                     width: 600px;
                     text-decoration: none;
                     color: $base-color;
                     padding-bottom: 20px;
                     border-bottom: solid 1px $base-color;
                     transition: all .3s;
-                    &:hover{
+
+                    &:hover {
                         color: $color-hover;
                         border-bottom: solid 1px #2196F3;
                     }
-                    i{
+
+                    i {
                         float: right;
                     }
                 }
@@ -232,12 +279,13 @@ header{
 }
 
 /*--- PORTFOLIO ---*/
-.portfolio{
-    .content_portfolio{
+.portfolio {
+    .content_portfolio {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        a{
+
+        a {
             display: block;
             background-color: #2196f3;
             width: 400px;
@@ -245,22 +293,26 @@ header{
             margin: 0 50px;
             border: solid 2px #fff;
             transition: all .5s;
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 background-color: #f44336;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 background-color: #ff9800;
-            }  
-            &:hover{
+            }
+
+            &:hover {
                 border: solid 2px $base-color;
             }
         }
     }
 
-    .btn_portfolio{
+    .btn_portfolio {
         display: flex;
         justify-content: center;
-        a{
+
+        a {
             margin-top: 50px;
             background-color: $base-color;
             text-transform: uppercase;
@@ -270,29 +322,33 @@ header{
             color: #fff;
             border: solid 1px $base-color;
             transition: all .2s;
-            &:hover{
+
+            &:hover {
                 background-color: #fff;
                 color: $base-color;
             }
         }
     }
-    
+
 }
 
 /*--- contact ---*/
-.contact{
+.contact {
     background-color: #fff;
-    .content_contact{
+
+    .content_contact {
         padding: 100px 200px;
         width: 700px;
-        h2{
+
+        h2 {
             display: block;
             position: relative;
             font-size: 48px;
             font-weight: 600;
             padding-top: 40px;
             color: $base-color;
-            &:before{
+
+            &:before {
                 position: absolute;
                 content: "";
                 top: 0;
@@ -302,27 +358,35 @@ header{
                 background-color: $base-color;
             }
         }
-        h3{
+
+        h3 {
             font-size: 20px;
             font-weight: 400;
             margin-bottom: 50px;
             color: $base-color;
         }
-        input, textarea{
+
+        input,
+        textarea {
             font-size: 20px;
-            &:focus{
+
+            &:focus {
                 border: none;
                 outline: none;
             }
         }
-        input[type=text], input[type=email], textarea{
+
+        input[type=text],
+        input[type=email],
+        textarea {
             width: 100%;
             padding: 0 0 10px 5px;
             border: none;
             border-bottom: solid 1px $base-color;
             margin-bottom: 35px;
         }
-        input[type=submit]{
+
+        input[type=submit] {
             margin-top: 10px;
             cursor: pointer;
             background-color: #fff;
@@ -331,24 +395,29 @@ header{
             padding: 20px 40px;
             font-size: 18px;
             color: $base-color;
-            &:hover{
+
+            &:hover {
                 background-color: $base-color;
                 color: #fff;
             }
         }
-        #name{
+
+        #name {
             width: 45%;
             margin-right: 7.8%;
         }
-        #email{
+
+        #email {
             width: 45%;
         }
-        textarea{
-            min-width : 100%;
-            max-width : 100%;
-            min-height : 100px;
-            max-height : 300px;
-            &:focus{
+
+        textarea {
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100px;
+            max-height: 300px;
+
+            &:focus {
                 border-bottom: solid 1px $base-color;
             }
         }

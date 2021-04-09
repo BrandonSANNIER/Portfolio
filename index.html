@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brandon SANNIER">
     <meta name="description" content="">
-    <title>Portfolio</title>
+    <title>Accueil - Portfolio</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="32x32" href="img/favicon/favicon-32.png" type="image/png">
@@ -25,9 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
@@ -35,6 +33,7 @@
 
 <body>
     <main>
+        <div class="loader"></div>
         <!--------- NAVBAR --------->
         <nav>
             <a href="index.html#accueil">
@@ -66,12 +65,11 @@
         </div>
 
         <div id="fullpage">
-            
+
             <!--------- HEADER --------->
             <header class="section">
                 <div class="img_header">
-                    <h1>Bonjour, je suis développeur front-end dans le Pas-de-Calais.<br>Bienvenue sur mon portfolio !
-                    </h1>
+                    <h1>Bonjour, je suis développeur front-end dans le Pas-de-Calais.<br>Bienvenue sur mon portfolio !</h1>
                 </div>
                 <div class="scroll_wrapper">
                     <a href="index.html#about">
@@ -106,9 +104,9 @@
                 <div class="content_about">
                     <h2>Je réalise des sites internet avec le souci du détail et un rendu fidèle au design.</h2>
                     <ul>
-                        <li><a href="about.html">01. Webdesigner Photoshop - Figma</a></li>
-                        <li><a href="about.html">02. Intégrateur HTML - CSS - JS </i></a></li>
-                        <li><a href="about.html">03. WordPress </i></a></li>
+                        <li><a href="about.html#webdesigner">01. Webdesigner Photoshop - Figma</a></li>
+                        <li><a href="about.html#integrateur">02. Intégrateur HTML - CSS - JS </i></a></li>
+                        <li><a href="about.html#wordpress">03. WordPress </i></a></li>
                     </ul>
                 </div>
             </section>
@@ -127,15 +125,16 @@
                     </a>
                 </div>
                 <div class="btn_portfolio">
-                    <a href="#">Portfolio</a>
+                    <a href="portfolio.html">Portfolio</a>
                 </div>
             </section>
 
             <!--------- CONTACT --------->
-            <section class="contact section"> 
+            <section class="contact section">
                 <div class="content_contact">
                     <h2>Démarrons un projet ensemble.</h2>
-                    <h3>Je suis intéressé par les opportunités d'indépendant. Cependant, si vous avez d'autres demandes ou questions, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous.</h3>
+                    <h3>Je suis intéressé par les opportunités d'indépendant. Cependant, si vous avez d'autres demandes
+                        ou questions, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous.</h3>
                     <form action="" method="GET">
                         <input type="text" id="name" placeholder="Nom" required>
                         <input type="email" id="email" placeholder="E-mail" required>
@@ -149,6 +148,8 @@
     </main>
 
     <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/main.js"></script>
     <script>
         new fullpage('#fullpage', {
             navigation: true,

@@ -1,0 +1,67 @@
+/*--- HEADER PROJET ---*/ 
+
+.header_projet{
+    .content_img_projet{
+        overflow: hidden;
+        position: absolute;
+        width: 600px;
+        height: 700px;
+        top: 0;
+        left: 35%;
+    }
+    .title_header_projet{
+        margin-top: 33%;
+        text-align: center;
+        h2{
+            text-transform: uppercase;
+            font-size: 36px;
+            letter-spacing: 5px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+}
+
+/*--- CONTENT PROJET ---*/ 
+
+.content_projet{
+    display: flex;
+    margin-top: 70px;
+    .mockup{
+        width: 50%;
+        height: 1000px;
+        background-color: red;
+    }
+    .desc_projet{
+        margin-left: 30px;
+        width: 50%;
+        p{
+            line-height: 25px;
+            margin-bottom: 40px;
+            span{
+                text-transform: uppercase;
+            }
+        }
+        h5{
+            font-size: 17px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            text-transform: uppercase;
+            padding: 15px 20px;
+            border: solid 1px #000;
+            transition: all .5s;
+            &:hover{
+                background-color: #000;
+                color: #fff;
+                
+            }
+        }
+    }
+}
