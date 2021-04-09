@@ -1,0 +1,37 @@
+.portfolio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .bloc_projet{
+        background-color: $color-hover;
+        width: 500px;
+        height: 700px;
+        margin: 50px;
+        &:nth-child(2){
+            background-color: red;
+            align-self: flex-end;
+            width: 500px;
+            height: 600px;
+        }
+        &:nth-child(3){
+            background-color: black;
+            width: 500px;
+            height: 600px;
+        }
+        &:nth-child(4){
+            background-color: blue;
+        }
+        &:nth-child(5){
+            background-color: green;
+        }
+        &:nth-child(6){
+            background-color: yellow;
+        }
+        &:nth-child(7){
+            background-color: aqua;
+        }
+        &:nth-child(8){
+            background-color: indigo;
+        }
+    }
+}

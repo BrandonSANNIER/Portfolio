@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: url(../img/cursor.png), pointer;
+  font-family: "Jost", sans-serif;
 }
 
-* {
-  cursor: url(../img/cursor.png), pointer;
+.clear {
+  clear: both;
 }
 
 /*--- NAV ---*/
@@ -29,7 +31,7 @@ nav {
 nav a svg {
   width: 45px;
   height: 55px;
-  fill: #000;
+  fill: #111111;
 }
 
 nav ul {
@@ -45,14 +47,13 @@ nav ul li {
 nav ul li a {
   width: 100%;
   font-size: 19px;
-  font-family: 'Jost', sans-serif;
   margin-left: 40px;
   text-decoration: none;
-  color: #000;
+  color: #111111;
 }
 
 nav ul li a:hover {
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #111111;
 }
 
 /*--- SOCIAL MENU ---*/
@@ -72,7 +73,7 @@ nav ul li a:hover {
 }
 
 .social_menu li a i {
-  color: #000;
+  color: #111111;
   font-size: 32px;
   cursor: pointer;
   -webkit-transition: all .3s;
@@ -104,7 +105,6 @@ header .img_header h1 {
   z-index: 1;
   padding: 80px 100px;
   color: #fff;
-  font-family: "Jost";
   font-weight: 300;
   font-size: 24px;
 }
@@ -267,6 +267,13 @@ header .scroll_wrapper svg:hover {
 }
 
 .about .content_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 100px 200px;
   width: 600px;
 }
@@ -274,10 +281,10 @@ header .scroll_wrapper svg:hover {
 .about .content_about h2 {
   display: block;
   position: relative;
-  font-family: "Jost", sans-serif;
   font-size: 48px;
   font-weight: 600;
   padding-top: 40px;
+  color: #111111;
 }
 
 .about .content_about h2:before {
@@ -287,12 +294,11 @@ header .scroll_wrapper svg:hover {
   height: .1rem;
   width: 7rem;
   z-index: 1;
-  background-color: #000;
+  background-color: #111111;
 }
 
 .about .content_about ul {
   list-style: none;
-  font-family: "Jost", sans-serif;
   margin-top: 30px;
   font-size: 30px;
   font-weight: 300;
@@ -307,9 +313,9 @@ header .scroll_wrapper svg:hover {
   display: block;
   width: 600px;
   text-decoration: none;
-  color: #000;
+  color: #111111;
   padding-bottom: 20px;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #111111;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -328,6 +334,8 @@ header .scroll_wrapper svg:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -353,7 +361,7 @@ header .scroll_wrapper svg:hover {
 }
 
 .portfolio .content_portfolio a:hover {
-  border: solid 2px #000;
+  border: solid 2px #111111;
 }
 
 .portfolio .btn_portfolio {
@@ -367,21 +375,20 @@ header .scroll_wrapper svg:hover {
 
 .portfolio .btn_portfolio a {
   margin-top: 50px;
-  background-color: black;
-  font-family: "Jost", sans-serif;
+  background-color: #111111;
   text-transform: uppercase;
   padding: 20px 40px;
   font-size: 18px;
   text-decoration: none;
   color: #fff;
-  border: solid 1px #000;
+  border: solid 1px #111111;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .portfolio .btn_portfolio a:hover {
   background-color: #fff;
-  color: #000;
+  color: #111111;
 }
 
 /*--- contact ---*/
@@ -397,31 +404,30 @@ header .scroll_wrapper svg:hover {
 .contact .content_contact h2 {
   display: block;
   position: relative;
-  font-family: "Jost", sans-serif;
   font-size: 48px;
   font-weight: 600;
   padding-top: 40px;
+  color: #111111;
 }
 
 .contact .content_contact h2:before {
   position: absolute;
   content: "";
   top: 0;
-  height: .1rem;
+  height: 0.1rem;
   width: 7rem;
   z-index: 1;
-  background-color: #000;
+  background-color: #111111;
 }
 
 .contact .content_contact h3 {
-  font-family: "Jost", sans-serif;
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 50px;
+  color: #111111;
 }
 
 .contact .content_contact input, .contact .content_contact textarea {
-  font-family: "Jost", sans-serif;
   font-size: 20px;
 }
 
@@ -434,30 +440,29 @@ header .scroll_wrapper svg:hover {
   width: 100%;
   padding: 0 0 10px 5px;
   border: none;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #111111;
   margin-bottom: 35px;
-  font-family: "Jost", sans-serif;
 }
 
 .contact .content_contact input[type=submit] {
   margin-top: 10px;
   cursor: pointer;
   background-color: #fff;
-  border: solid 1px #000;
-  font-family: "Jost", sans-serif;
+  border: solid 1px #111111;
   text-transform: uppercase;
   padding: 20px 40px;
   font-size: 18px;
+  color: #111111;
 }
 
 .contact .content_contact input[type=submit]:hover {
-  background-color: #000;
+  background-color: #111111;
   color: #fff;
 }
 
 .contact .content_contact #name {
   width: 45%;
-  margin-right: 8%;
+  margin-right: 7.8%;
 }
 
 .contact .content_contact #email {
@@ -467,12 +472,12 @@ header .scroll_wrapper svg:hover {
 .contact .content_contact textarea {
   min-width: 100%;
   max-width: 100%;
-  min-height: 0;
+  min-height: 100px;
   max-height: 300px;
 }
 
 .contact .content_contact textarea:focus {
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #111111;
 }
 
 .content_page {
@@ -480,20 +485,24 @@ header .scroll_wrapper svg:hover {
   margin: 150px auto 50px auto;
 }
 
+.right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 /*--- HEADER ---*/
 .content_header {
   width: 60%;
+  font-family: "Jost", sans-serif;
 }
 
 .content_header h5 {
-  font-family: "Jost", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 13px;
 }
 
 .content_header h1 {
-  font-family: "Jost", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 36px;
@@ -501,40 +510,65 @@ header .scroll_wrapper svg:hover {
 }
 
 .content_header p {
-  font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
 /*--- ARTICLES ---*/
-.content_article {
-  margin: 250px 0 330px 0;
-  z-index: 1;
+.article_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.article_about article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
+}
+
+.article_about article .section_article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  padding: 50px;
+  margin: 250px 0;
+  background-color: #f44336;
+  font-family: "Jost", sans-serif;
   color: #fff;
 }
 
-.content_article .section_article {
-  width: 500px;
-  padding: 50px;
-}
-
-.content_article .section_article h4 {
-  font-family: "Jost", sans-serif;
+.article_about article .section_article h4 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   font-weight: 300;
   font-size: 16px;
 }
 
-.content_article .section_article h2 {
-  font-family: "Jost", sans-serif;
+.article_about article .section_article h2 {
   font-weight: 400;
   font-size: 36px;
   margin: 10px 0 40px 0;
 }
 
-.content_article .section_article a {
-  font-family: "Jost", sans-serif;
+.article_about article .section_article a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   text-decoration: none;
   font-weight: 300;
   font-size: 16px;
@@ -544,28 +578,33 @@ header .scroll_wrapper svg:hover {
   text-transform: uppercase;
 }
 
-.content_article #section_img {
-  z-index: -1;
-  position: absolute;
-  width: 700px;
-  left: 536px;
-  top: -35%;
-}
-
-.content_article #section1 {
+.article_about article #bg_article_1 {
   background-color: #f44336;
 }
 
-.content_article #section2 {
+.article_about article #bg_article_2 {
   background-color: #2196f3;
 }
 
-.content_article #section3 {
+.article_about article #bg_article_3 {
   background-color: #ff9800;
+}
+
+.article_about img {
+  z-index: -1;
+  position: absolute;
+  width: 700px;
+  right: 0px;
+  top: 150px;
+}
+
+.article_about #art_img_left {
+  left: 0px;
 }
 
 /*--- FOOTER ---*/
 footer {
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,5 +664,56 @@ footer .content_bottom_footer .link_footer a {
   color: #000;
   -webkit-text-decoration: #000;
           text-decoration: #000;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio .bloc_projet {
+  background-color: #2196F3;
+  width: 500px;
+  height: 700px;
+  margin: 50px;
+}
+
+.portfolio .bloc_projet:nth-child(2) {
+  background-color: red;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 500px;
+  height: 600px;
+}
+
+.portfolio .bloc_projet:nth-child(3) {
+  background-color: black;
+  width: 500px;
+  height: 600px;
+}
+
+.portfolio .bloc_projet:nth-child(4) {
+  background-color: blue;
+}
+
+.portfolio .bloc_projet:nth-child(5) {
+  background-color: green;
+}
+
+.portfolio .bloc_projet:nth-child(6) {
+  background-color: yellow;
+}
+
+.portfolio .bloc_projet:nth-child(7) {
+  background-color: aqua;
+}
+
+.portfolio .bloc_projet:nth-child(8) {
+  background-color: indigo;
 }
 /*# sourceMappingURL=style.css.map */
