@@ -1,6 +1,30 @@
-@import 'mixins';
-@import 'index';
-@import 'about';
-@import 'portfolio';
-@import 'projet';
-@import 'mention_legale';
+@charset "UTF-8";
+
+// 1. Utilities
+
+@import 
+    'utilities/mixins',
+    'utilities/variables',
+    'utilities/functions';
+    
+
+
+// 2. Components
+
+@import 
+    'components/buttons';
+
+// 3. Layout
+
+@import 
+    'layout/footer',
+    'layout/header';
+
+// 4. Pages
+
+@import 
+    'pages/about',
+    'pages/about',
+    'pages/portfolio',
+    'pages/projet',
+    'pages/mention_legale';

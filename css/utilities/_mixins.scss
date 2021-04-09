@@ -1,0 +1,10 @@
+//
+// ──────────────────────────────────────────────────────────────── FONT ─────
+//
+
+@mixin font ($size, $weight, $height, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+}
