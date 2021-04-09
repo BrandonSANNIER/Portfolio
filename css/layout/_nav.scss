@@ -1,0 +1,122 @@
+//
+// ────────────────────────────────────────────────────────────────────── NAV ─────
+//
+
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88%;
+    top: 25px;
+    left: 100px;
+    line-height: 50px;
+    z-index: 1;
+
+    a {
+        svg {
+            width: 45px;
+            height: 55px;
+            fill: $color-primary;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+
+            a {
+                @include font(19px, 400, 19px, $color-primary);
+                width: 100%;
+                margin: 0 20px;
+                text-decoration: none;
+
+                &:hover {
+                    border-bottom: solid 1px $color-primary;
+                }
+            }
+        }
+    }
+}
+
+
+//
+// ────────────────────────────────────────────────────────────── SOCIAL MENU ─────
+//
+
+
+.social_menu {
+    position: fixed;
+    z-index: 1;
+    top: 42%;
+    width: 3%;
+
+    ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        li {
+        
+            list-style-type: none;
+            margin: 10px 0;
+    
+            a {
+                
+    
+                i {
+                    color: $color-primary;
+                    font-size: 32px;
+                    cursor: pointer;
+                    transition: all .3s;
+    
+                    &:hover {
+                        color: $color-hover;
+                        cursor: url(../img/cursor.png), pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+//
+// ──────────────────────────────────────────────────────────────── LAPTOP ─────
+//
+
+
+@include lt {
+    nav{
+        width: 60%;
+    }
+}
+
+
+//
+// ──────────────────────────────────────────────────────────────── TABLET ─────
+//
+
+
+@include t {
+    nav{
+        width: 50%;
+    }
+}
+
+
+//
+// ──────────────────────────────────────────────────────────────── MOBILE ─────
+//
+
+
+@include m {
+    nav{
+        width: 60%;
+    }
+}

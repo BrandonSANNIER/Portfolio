@@ -1,0 +1,27 @@
+//
+// ──────────────────────────────────────────────────────────────── RECCURENT ─────
+//
+
+
+.loader {
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: $color-base;
+}
+
+.clear {
+    clear: both;
+}
+
+.content_page {
+    width: 65%;
+    margin: 150px auto 50px auto;
+}
+
+.right {
+    align-self: flex-end;
+}

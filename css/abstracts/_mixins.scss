@@ -1,0 +1,42 @@
+//
+// ──────────────────────────────────────────────────────────────── FONT ─────
+//
+
+@mixin font ($size, $weight, $height, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+}
+
+//
+// ───────────────────────────────────────────────────────── BREAKPOINTS ─────
+//
+
+// Mobile
+@mixin m {
+    @media (max-width: #{$screen-m-min}) {
+        @content;
+    }
+}
+
+// Tablet
+@mixin t {
+    @media (max-width: #{$screen-t-min}) {
+        @content;
+    }
+}
+
+// Laptop
+@mixin lt {
+    @media (max-width: #{$screen-lt-min}) {
+        @content;
+    }
+}
+
+// Laptop L
+@mixin ltl {
+    @media (max-width: #{$screen-ltl-min}) {
+        @content;
+    }
+}

@@ -97,3 +97,77 @@
         left: 0px;
     }
 }
+
+
+
+
+//
+// ──────────────────────────────────────────────────────────────── LAPTOP L ─────
+//
+
+
+@include ltl {
+
+}
+
+
+//
+// ──────────────────────────────────────────────────────────────── LAPTOP ─────
+//
+
+
+@include lt {
+    .content_header {
+        width: 85%;
+    }
+    .right {
+        align-self: flex-start;
+    }
+    .article_about {
+        article {
+            .section_article {
+                margin: 100px 0;
+            }
+        }
+        img{
+            display: none;
+        }
+    }
+}
+
+
+//
+// ──────────────────────────────────────────────────────────────── TABLET ─────
+//
+
+
+@include t {
+    .content_page {
+        width: 80%;
+    }
+    .content_header {
+        width: 95%;
+    }
+}
+
+
+//
+// ──────────────────────────────────────────────────────────────── MOBILE ─────
+//
+
+
+@include m {
+    .content_page {
+        width: 95%;
+    }
+    .content_header {
+        width: 100%;
+    }
+    .article_about {
+        article {
+            .section_article {
+                padding: 24px;
+            }
+        }
+    }
+}

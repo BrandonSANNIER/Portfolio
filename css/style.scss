@@ -1,29 +1,42 @@
 @charset "UTF-8";
 
-// 1. Utilities
+// 1. Abstracts
 
 @import 
-    'utilities/mixins',
-    'utilities/variables',
-    'utilities/functions';
-    
+    'abstracts/variables',
+    'abstracts/functions',
+    'abstracts/mixins';
 
 
-// 2. Components
+// 2. Vendors
+
+
+
+// 3. Base
+
+@import 
+    'base/reset',
+    'base/recurrent',
+    'base/typography',
+    'base/breakpoints';
+
+
+// 4. Layout
+
+@import 
+    'layout/nav',
+    'layout/footer';
+
+
+// 5. Components
 
 @import 
     'components/buttons';
 
-// 3. Layout
+// 6. Pages
 
 @import 
-    'layout/footer',
-    'layout/header';
-
-// 4. Pages
-
-@import 
-    'pages/about',
+    'pages/index',
     'pages/about',
     'pages/portfolio',
     'pages/projet',

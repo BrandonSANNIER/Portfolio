@@ -29,17 +29,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
-    <!-- SPLIDE -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <main>
         <div class="loader"></div>
+
         <!--------- NAVBAR --------->
+
         <nav>
             <a href="index.html#accueil">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -60,6 +60,7 @@
         </nav>
 
         <!--------- SOCIAL MENU --------->
+
         <div class="social_menu">
             <ul>
                 <li><a href="#"><i class="fab fa-github"></i></a></li>
@@ -72,9 +73,10 @@
         <div id="fullpage">
 
             <!--------- HEADER --------->
+
             <header class="section">
                 <div class="media_header">
-                    <video autoplay muted loop preload>
+                    <video data-autoplay muted loop>
                         <source src="video/header.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -108,6 +110,7 @@
             </header>
 
             <!--------- ABOUT --------->
+
             <section class="about section">
                 <div class="content_about">
                     <h2>Je réalise des sites internet avec le souci du détail et un rendu fidèle au design.</h2>
@@ -120,24 +123,28 @@
             </section>
 
             <!--------- PORTFOLIO --------->
+
             <section class="portfolio section">
                 <div class="content_portfolio">
-                    <a href="portfolio/webagency.html">
-                        <img src="img/portfolio/webagency.jpg" alt="">
-                    </a>
-                    <a href="portfolio/ireki.html">
-                        <img src="img/portfolio/ireki.jpg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="img/portfolio/velov.jpg" alt="">
-                    </a>
-                </div>
-                <div class="btn_portfolio">
-                    <a href="portfolio.html">Portfolio</a>
+                    <div class="article-list">
+                        <a href="portfolio/webagency.html">
+                            <img src="img/portfolio/webagency.jpg" alt="">
+                        </a>
+                        <a href="portfolio/ireki.html">
+                            <img src="img/portfolio/ireki.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/portfolio/velov.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="btn_portfolio">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
                 </div>
             </section>
 
             <!--------- CONTACT --------->
+            
             <section class="contact section">
                 <div class="content_contact">
                     <h2>Démarrons un projet ensemble.</h2>
@@ -155,14 +162,13 @@
         </div>
     </main>
 
-    <script type="text/javascript" src="js/fullpage.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/vendors/fullpage.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
         new fullpage('#fullpage', {
             navigation: true,
-            responsiveWidth: 700,
+            responsiveWidth: 1025,
             anchors: ['accueil', 'about', 'portfolio', 'contact'],
             parallax: true
         });
