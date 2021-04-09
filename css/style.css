@@ -3,20 +3,33 @@ body, ul, li, p, h1, h2 {
   padding: 0;
 }
 
+* {
+  cursor: url(../img/cursor.png), pointer;
+}
+
 /*--- NAV ---*/
 nav {
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 88%;
-  top: 30px;
+  top: 25px;
   left: 100px;
   line-height: 50px;
   z-index: 1;
+}
+
+nav a svg {
+  width: 45px;
+  height: 55px;
+  fill: #000;
 }
 
 nav ul {
@@ -67,7 +80,8 @@ nav ul li a:hover {
 }
 
 .social_menu li a i:hover {
-  color: red;
+  color: #2196F3;
+  cursor: url(../img/cursor.png), pointer;
 }
 
 /*--- HEADER ---*/
@@ -88,15 +102,163 @@ header .img_header {
 
 header .img_header h1 {
   z-index: 1;
-  padding: 100px 100px;
+  padding: 80px 100px;
   color: #fff;
   font-family: "Jost";
   font-weight: 300;
   font-size: 24px;
 }
 
-header .img_header .scroll_wrapper {
-  visibility: hidden;
+header .scroll_wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  -webkit-transform: translateX(-49%);
+          transform: translateX(-49%);
+  text-align: center;
+  z-index: 1;
+}
+
+header .scroll_wrapper svg {
+  fill: #fff;
+  margin: 0 auto;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 160px;
+  background-size: 225%;
+  -webkit-animation: c 5s linear infinite,e 5s ease-out infinite;
+          animation: c 5s linear infinite,e 5s ease-out infinite;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header .scroll_wrapper svg:hover {
+  fill: #2196F3;
+}
+
+@-webkit-keyframes c {
+  0% {
+    background-position: 0 100%;
+  }
+  20% {
+    background-position: 0 0;
+  }
+  21% {
+  }
+  29.99% {
+    background-position: 0 0;
+  }
+  30% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  59% {
+    background-position: 0 0;
+  }
+  60% {
+    background-position: 0 100%;
+  }
+  80% {
+    background-position: 0 0;
+  }
+  81% {
+  }
+}
+
+@keyframes c {
+  0% {
+    background-position: 0 100%;
+  }
+  20% {
+    background-position: 0 0;
+  }
+  21% {
+  }
+  29.99% {
+    background-position: 0 0;
+  }
+  30% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  59% {
+    background-position: 0 0;
+  }
+  60% {
+    background-position: 0 100%;
+  }
+  80% {
+    background-position: 0 0;
+  }
+  81% {
+  }
+}
+
+@-webkit-keyframes e {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(0.4rem);
+            transform: translateY(0.4rem);
+  }
+  30% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(0.4rem);
+            transform: translateY(0.4rem);
+  }
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  80% {
+    -webkit-transform: translateY(0.4rem);
+            transform: translateY(0.4rem);
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes e {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(0.4rem);
+            transform: translateY(0.4rem);
+  }
+  30% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(0.4rem);
+            transform: translateY(0.4rem);
+  }
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  80% {
+    -webkit-transform: translateY(0.4rem);
+            transform: translateY(0.4rem);
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 /*--- ABOUT ---*/
@@ -110,9 +272,22 @@ header .img_header .scroll_wrapper {
 }
 
 .about .content_about h2 {
+  display: block;
+  position: relative;
   font-family: "Jost", sans-serif;
   font-size: 48px;
   font-weight: 600;
+  padding-top: 40px;
+}
+
+.about .content_about h2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: .1rem;
+  width: 7rem;
+  z-index: 1;
+  background-color: #000;
 }
 
 .about .content_about ul {
@@ -129,7 +304,8 @@ header .img_header .scroll_wrapper {
 }
 
 .about .content_about ul li a {
-  width: 20%;
+  display: block;
+  width: 600px;
   text-decoration: none;
   color: #000;
   padding-bottom: 20px;
@@ -139,8 +315,12 @@ header .img_header .scroll_wrapper {
 }
 
 .about .content_about ul li a:hover {
-  color: red;
-  border-bottom: solid 1px red;
+  color: #2196F3;
+  border-bottom: solid 1px #2196F3;
+}
+
+.about .content_about ul li a i {
+  float: right;
 }
 
 /*--- PORTFOLIO ---*/
@@ -153,19 +333,27 @@ header .img_header .scroll_wrapper {
           justify-content: center;
 }
 
-.portfolio .content_portfolio .img_portfolio {
+.portfolio .content_portfolio a {
+  display: block;
   background-color: #2196f3;
   width: 400px;
   height: 500px;
   margin: 0 50px;
+  border: solid 2px #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-.portfolio .content_portfolio .img_portfolio:nth-child(2) {
+.portfolio .content_portfolio a:nth-child(2) {
   background-color: #f44336;
 }
 
-.portfolio .content_portfolio .img_portfolio:nth-child(3) {
+.portfolio .content_portfolio a:nth-child(3) {
   background-color: #ff9800;
+}
+
+.portfolio .content_portfolio a:hover {
+  border: solid 2px #000;
 }
 
 .portfolio .btn_portfolio {
@@ -207,9 +395,22 @@ header .img_header .scroll_wrapper {
 }
 
 .contact .content_contact h2 {
+  display: block;
+  position: relative;
   font-family: "Jost", sans-serif;
   font-size: 48px;
   font-weight: 600;
+  padding-top: 40px;
+}
+
+.contact .content_contact h2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: .1rem;
+  width: 7rem;
+  z-index: 1;
+  background-color: #000;
 }
 
 .contact .content_contact h3 {
@@ -235,6 +436,7 @@ header .img_header .scroll_wrapper {
   border: none;
   border-bottom: solid 1px #000;
   margin-bottom: 35px;
+  font-family: "Jost", sans-serif;
 }
 
 .contact .content_contact input[type=submit] {
@@ -262,7 +464,14 @@ header .img_header .scroll_wrapper {
   width: 45%;
 }
 
-.contact .content_contact #message {
-  height: auto;
+.contact .content_contact textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 0;
+  max-height: 300px;
+}
+
+.contact .content_contact textarea:focus {
+  border-bottom: solid 1px #000;
 }
 /*# sourceMappingURL=style.css.map */
