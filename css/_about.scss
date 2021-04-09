@@ -11,24 +11,20 @@
 
 .content_header {
     width: 60%;
-    font-family: "Jost", sans-serif;
 
     h5 {
+        @include font(13px, 300, 10px, $base-color);
         text-transform: uppercase;
-        font-weight: 300;
-        font-size: 13px;
     }
 
     h1 {
+        @include font(36px, 600, 55px, $base-color);
         text-transform: uppercase;
-        font-weight: 600;
-        font-size: 36px;
         margin-bottom: 30px;
     }
 
     p {
-        font-weight: 400;
-        font-size: 18px;
+        @include font(18px, 400, 40px, $base-color);
         margin-bottom: 10px;
     }
 }
@@ -51,34 +47,29 @@
             padding: 50px;
             margin: 250px 0;
             background-color: #f44336;
-            font-family: "Jost", sans-serif;
-            color: #fff;
 
             h4 {
                 align-self: flex-start;
-                font-weight: 300;
-                font-size: 16px;
+                @include font(16px, 300, 40px, $color-white);
             }
 
             h2 {
-                font-weight: 400;
-                font-size: 36px;
+                @include font(36px, 400, 36px, $color-white);
                 margin: 10px 0 40px 0;
             }
 
             a {
                 align-self: flex-start;
                 text-decoration: none;
-                font-weight: 300;
-                font-size: 16px;
-                color: #fff;
-                border: solid 1px #fff;
+                @include font(16px, 300, 16px, $color-white);
+                border: solid 1px $color-white;
                 padding: 10px 20px;
                 text-transform: uppercase;
                 transition: all .3s;
-                &:hover{
-                    background-color: #fff;
-                    color: #000;
+
+                &:hover {
+                    background-color: $color-white;
+                    color: $base-color;
                 }
             }
         }
@@ -118,19 +109,22 @@ footer {
     align-items: center;
 
     #projet_footer {
-        font-family: "Jost", sans-serif;
-        font-weight: 300;
-        font-size: 24px;
+        @include font(24px, 300, 24px, $base-color);
 
         a {
-            color: #000;
+            color: $base-color;
             text-decoration: none;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid $base-color;
+
+            &:hover {
+                color: $color-hover;
+                border-bottom: solid 1px $color-hover;
+            }
         }
     }
 
     hr {
-        color: #000;
+        color: $base-color;
         width: 100%;
         margin: 20px 0;
     }
@@ -140,25 +134,23 @@ footer {
         display: flex;
         justify-content: space-between;
 
-        p {
-            font-family: "Jost", sans-serif;
-        }
-
         a {
-            color: #000;
+            color: $base-color;
             text-decoration: none;
 
             &:hover {
-                border-bottom: solid 1px #000;
+                border-bottom: solid 1px $base-color;
             }
         }
 
         .link_footer {
             a {
-                font-family: "Jost", sans-serif;
                 margin: 0 10px;
-                color: #000;
-                text-decoration: #000;
+                color: $base-color;
+
+                &:hover {
+                    border-bottom: solid 1px $base-color;
+                }
             }
         }
     }

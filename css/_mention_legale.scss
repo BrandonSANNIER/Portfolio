@@ -1,9 +1,10 @@
-.mentions{
-    h4{
+.mentions {
+    h4 {
         position: relative;
         text-transform: uppercase;
         font-size: 36px;
         margin-bottom: 50px;
+
         &:before {
             position: absolute;
             content: "";
@@ -15,11 +16,11 @@
         }
     }
 
-    a{
-        color: #000;
+    a {
+        color: $base-color;
     }
 
-    h5{
+    h5 {
         font-size: 20px;
         margin: 20px 0;
     }

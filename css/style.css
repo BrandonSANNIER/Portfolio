@@ -13,7 +13,7 @@
   left: 0px;
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color: #fff;
 }
 
 .clear {
@@ -56,11 +56,13 @@ nav ul li {
 }
 
 nav ul li a {
-  width: 100%;
   font-size: 19px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #111111;
+  width: 100%;
   margin: 0 20px;
   text-decoration: none;
-  color: #111111;
 }
 
 nav ul li a:hover {
@@ -102,12 +104,9 @@ header .fp-tableCell {
 }
 
 header .media_header {
-  width: 93.5%;
+  position: absolute;
+  overflow: hidden;
   margin: 100px 60px 0 60px;
-}
-
-header .media_header:before {
-  background-color: black;
 }
 
 header .media_header video {
@@ -120,9 +119,10 @@ header h1 {
   left: 8%;
   position: absolute;
   z-index: 1;
-  color: #fff;
-  font-weight: 300;
   font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #fff;
 }
 
 header .scroll_wrapper {
@@ -299,8 +299,9 @@ header .scroll_wrapper svg:hover {
   position: relative;
   font-size: 48px;
   font-weight: 600;
-  padding-top: 40px;
+  line-height: 60px;
   color: #111111;
+  padding-top: 40px;
 }
 
 .about .content_about h2:before {
@@ -315,9 +316,11 @@ header .scroll_wrapper svg:hover {
 
 .about .content_about ul {
   list-style: none;
-  margin-top: 30px;
   font-size: 30px;
   font-weight: 300;
+  line-height: 30px;
+  color: #111111;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -393,24 +396,27 @@ header .scroll_wrapper svg:hover {
 }
 
 .portfolio .btn_portfolio a {
-  margin-top: 50px;
-  background-color: #111111;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #111111;
+  margin-top: 70px;
+  background-color: #fff;
   text-transform: uppercase;
   padding: 20px 40px;
-  font-size: 18px;
   text-decoration: none;
-  color: #fff;
+  color: #111111;
   border: solid 1px #111111;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
 .portfolio .btn_portfolio a:hover {
-  background-color: #fff;
-  color: #111111;
+  background-color: #111111;
+  color: #fff;
 }
 
-/*--- contact ---*/
+/*--- CONTACT ---*/
 .contact {
   background-color: #fff;
 }
@@ -425,8 +431,10 @@ header .scroll_wrapper svg:hover {
   position: relative;
   font-size: 48px;
   font-weight: 600;
-  padding-top: 40px;
+  line-height: 48px;
   color: #111111;
+  padding-top: 40px;
+  margin-bottom: 15px;
 }
 
 .contact .content_contact h2:before {
@@ -442,13 +450,17 @@ header .scroll_wrapper svg:hover {
 .contact .content_contact h3 {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 50px;
+  line-height: 30px;
   color: #111111;
+  margin-bottom: 50px;
 }
 
 .contact .content_contact input,
 .contact .content_contact textarea {
   font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111111;
 }
 
 .contact .content_contact input:focus,
@@ -475,6 +487,8 @@ header .scroll_wrapper svg:hover {
   text-transform: uppercase;
   padding: 20px 40px;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
   color: #111111;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -518,25 +532,30 @@ header .scroll_wrapper svg:hover {
 /*--- HEADER ---*/
 .content_header {
   width: 60%;
-  font-family: "Jost", sans-serif;
 }
 
 .content_header h5 {
-  text-transform: uppercase;
-  font-weight: 300;
   font-size: 13px;
+  font-weight: 300;
+  line-height: 10px;
+  color: #111111;
+  text-transform: uppercase;
 }
 
 .content_header h1 {
-  text-transform: uppercase;
-  font-weight: 600;
   font-size: 36px;
+  font-weight: 600;
+  line-height: 55px;
+  color: #111111;
+  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
 .content_header p {
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #111111;
   margin-bottom: 10px;
 }
 
@@ -574,20 +593,22 @@ header .scroll_wrapper svg:hover {
   padding: 50px;
   margin: 250px 0;
   background-color: #f44336;
-  font-family: "Jost", sans-serif;
-  color: #fff;
 }
 
 .article_about article .section_article h4 {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  font-weight: 300;
   font-size: 16px;
+  font-weight: 300;
+  line-height: 40px;
+  color: #fff;
 }
 
 .article_about article .section_article h2 {
-  font-weight: 400;
   font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #fff;
   margin: 10px 0 40px 0;
 }
 
@@ -595,8 +616,9 @@ header .scroll_wrapper svg:hover {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-decoration: none;
-  font-weight: 300;
   font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
   color: #fff;
   border: solid 1px #fff;
   padding: 10px 20px;
@@ -607,7 +629,7 @@ header .scroll_wrapper svg:hover {
 
 .article_about article .section_article a:hover {
   background-color: #fff;
-  color: #000;
+  color: #111111;
 }
 
 .article_about article #bg_article_1 {
@@ -650,19 +672,25 @@ footer {
 }
 
 footer #projet_footer {
-  font-family: "Jost", sans-serif;
-  font-weight: 300;
   font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #111111;
 }
 
 footer #projet_footer a {
-  color: #000;
+  color: #111111;
   text-decoration: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #111111;
+}
+
+footer #projet_footer a:hover {
+  color: #9E9E9E;
+  border-bottom: solid 1px #9E9E9E;
 }
 
 footer hr {
-  color: #000;
+  color: #111111;
   width: 100%;
   margin: 20px 0;
 }
@@ -677,25 +705,22 @@ footer .content_bottom_footer {
           justify-content: space-between;
 }
 
-footer .content_bottom_footer p {
-  font-family: "Jost", sans-serif;
-}
-
 footer .content_bottom_footer a {
-  color: #000;
+  color: #111111;
   text-decoration: none;
 }
 
 footer .content_bottom_footer a:hover {
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #111111;
 }
 
 footer .content_bottom_footer .link_footer a {
-  font-family: "Jost", sans-serif;
   margin: 0 10px;
-  color: #000;
-  -webkit-text-decoration: #000;
-          text-decoration: #000;
+  color: #111111;
+}
+
+footer .content_bottom_footer .link_footer a:hover {
+  border-bottom: solid 1px #111111;
 }
 
 .portfolio h3 {
@@ -773,7 +798,7 @@ footer .content_bottom_footer .link_footer a {
 
 .portfolio .content_projet .bloc_projet a:hover {
   background-color: #fff;
-  color: #000;
+  color: #111111;
 }
 
 .portfolio .content_projet .bloc_projet img {
@@ -1076,7 +1101,7 @@ footer .content_bottom_footer .link_footer a {
 }
 
 .mentions a {
-  color: #000;
+  color: #111111;
 }
 
 .mentions h5 {
