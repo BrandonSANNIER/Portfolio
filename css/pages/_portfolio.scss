@@ -48,13 +48,16 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 color: $color-base;
-                border: solid 1px $color-base;
                 padding: 15px 20px;
                 position: absolute;
-                transition: all .3s;
+                background: linear-gradient(to right, $color-base, $color-base);
+                background-repeat: no-repeat;
+                background-size: 0 100%;
+                border: solid 1px $color-base;
+                transition: background-size .5s 0s, color .5s 0s;
 
                 &:hover {
-                    background-color: $color-base;
+                    background-size: 100% 100%;
                     color: $color-primary;
                 }
             }

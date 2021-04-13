@@ -71,15 +71,24 @@ nav ul li {
 nav ul li a {
   font-size: 19px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 20px;
+  color: #111111;
+  text-decoration: none;
   color: #111111;
   width: 100%;
   margin: 0 20px;
-  text-decoration: none;
+  padding-bottom: 3px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#111111), to(#111111));
+  background-image: linear-gradient(#111111, #111111);
+  background-size: 0 1px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 nav ul li a:hover {
-  border-bottom: solid 1px #111111;
+  background-size: 100% 1px, auto;
 }
 
 .social_menu {
@@ -117,7 +126,7 @@ nav ul li a:hover {
 }
 
 .social_menu ul li a i:hover {
-  color: #9E9E9E;
+  color: #434150;
   cursor: url(../img/cursor.png), pointer;
 }
 
@@ -167,8 +176,8 @@ footer #projet_footer a {
 }
 
 footer #projet_footer a:hover {
-  color: #9E9E9E;
-  border-bottom: solid 1px #9E9E9E;
+  color: #434150;
+  border-bottom: solid 1px #434150;
 }
 
 footer hr {
@@ -235,155 +244,73 @@ header h1 {
   line-height: 35px;
 }
 
-header .scroll_wrapper {
+header .scroll-downs {
   position: relative;
-  left: 49%;
-  bottom: 33%;
-  -webkit-transform: translateX(-49%);
-          transform: translateX(-49%);
-  text-align: center;
   z-index: 3;
+  top: -31%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 34px;
+  height: 55px;
 }
 
-header .scroll_wrapper svg {
-  fill: #fff;
-  margin: 0 auto;
-  position: relative;
-  width: 70px;
-  height: 70px;
-  border-radius: 160px;
-  background-size: 225%;
-  -webkit-animation: c 5s linear infinite, e 5s ease-out infinite;
-          animation: c 5s linear infinite, e 5s ease-out infinite;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+header .scroll-downs .mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
-header .scroll_wrapper svg:hover {
-  fill: #9E9E9E;
+header .scroll-downs .mousey .scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+          animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes c {
+@-webkit-keyframes scroll {
   0% {
-    background-position: 0 100%;
+    opacity: 0;
   }
-  20% {
-    background-position: 0 0;
+  10% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
-  21% {
-  }
-  29.99% {
-    background-position: 0 0;
-  }
-  30% {
-    background-position: 0 100%;
-  }
-  50% {
-    background-position: 0 0;
-  }
-  59% {
-    background-position: 0 0;
-  }
-  60% {
-    background-position: 0 100%;
-  }
-  80% {
-    background-position: 0 0;
-  }
-  81% {
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
   }
 }
 
-@keyframes c {
+@keyframes scroll {
   0% {
-    background-position: 0 100%;
+    opacity: 0;
   }
-  20% {
-    background-position: 0 0;
-  }
-  21% {
-  }
-  29.99% {
-    background-position: 0 0;
-  }
-  30% {
-    background-position: 0 100%;
-  }
-  50% {
-    background-position: 0 0;
-  }
-  59% {
-    background-position: 0 0;
-  }
-  60% {
-    background-position: 0 100%;
-  }
-  80% {
-    background-position: 0 0;
-  }
-  81% {
-  }
-}
-
-@-webkit-keyframes e {
-  0% {
+  10% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    opacity: 1;
   }
-  20% {
-    -webkit-transform: translateY(0.4rem);
-            transform: translateY(0.4rem);
-  }
-  30% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(0.4rem);
-            transform: translateY(0.4rem);
-  }
-  60% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  80% {
-    -webkit-transform: translateY(0.4rem);
-            transform: translateY(0.4rem);
-  }
-  90% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes e {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  20% {
-    -webkit-transform: translateY(0.4rem);
-            transform: translateY(0.4rem);
-  }
-  30% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(0.4rem);
-            transform: translateY(0.4rem);
-  }
-  60% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  80% {
-    -webkit-transform: translateY(0.4rem);
-            transform: translateY(0.4rem);
-  }
-  90% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
   }
 }
 
@@ -452,8 +379,8 @@ header .scroll_wrapper svg:hover {
 }
 
 .about .content_about ul li a:hover {
-  color: #9E9E9E;
-  border-bottom: solid 1px #9E9E9E;
+  color: #434150;
+  border-bottom: solid 1px #434150;
 }
 
 .about .content_about ul li a i {
@@ -542,18 +469,21 @@ header .scroll_wrapper svg:hover {
   line-height: 18px;
   color: #111111;
   margin-top: 70px;
-  background-color: #fff;
   text-transform: uppercase;
   padding: 20px 40px;
   text-decoration: none;
   color: #111111;
+  background: -webkit-gradient(linear, left top, right top, from(#111111), to(#111111));
+  background: linear-gradient(to right, #111111, #111111);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
   border: solid 1px #111111;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: background-size .5s 0s, color .5s 0s;
+  transition: background-size .5s 0s, color .5s 0s;
 }
 
 .portfolio .content_portfolio .btn_portfolio a:hover {
-  background-color: #111111;
+  background-size: 100% 100%;
   color: #fff;
 }
 
@@ -640,21 +570,24 @@ header .scroll_wrapper svg:hover {
 
 .contact .content_contact input[type=submit] {
   margin-top: 10px;
-  cursor: pointer;
-  background-color: #fff;
-  border: solid 1px #111111;
   text-transform: uppercase;
   padding: 20px 40px;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
   color: #111111;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  color: #111111;
+  background: -webkit-gradient(linear, left top, right top, from(#111111), to(#111111));
+  background: linear-gradient(to right, #111111, #111111);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  border: solid 1px #111111;
+  -webkit-transition: background-size .5s 0s, color .5s 0s;
+  transition: background-size .5s 0s, color .5s 0s;
 }
 
 .contact .content_contact input[type=submit]:hover {
-  background-color: #111111;
+  background-size: 100% 100%;
   color: #fff;
 }
 
@@ -694,7 +627,7 @@ header .scroll_wrapper svg:hover {
   .social_menu {
     display: none;
   }
-  .scroll_wrapper {
+  .scroll-downs {
     display: none;
   }
   .loader {
@@ -859,15 +792,19 @@ header .scroll_wrapper svg:hover {
   font-weight: 300;
   line-height: 16px;
   color: #fff;
-  border: solid 1px #fff;
   padding: 10px 20px;
   text-transform: uppercase;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+  background: linear-gradient(to right, #fff, #fff);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  border: solid 1px #fff;
+  -webkit-transition: background-size .5s 0s, color .5s 0s;
+  transition: background-size .5s 0s, color .5s 0s;
 }
 
 .article_about article .section_article a:hover {
-  background-color: #fff;
+  background-size: 100% 100%;
   color: #111111;
 }
 
@@ -976,7 +913,7 @@ header .scroll_wrapper svg:hover {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  background-color: #9E9E9E;
+  background-color: #434150;
   width: 514px;
   height: 700px;
   margin: 40px;
@@ -998,15 +935,19 @@ header .scroll_wrapper svg:hover {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  border: solid 1px #fff;
   padding: 15px 20px;
   position: absolute;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+  background: linear-gradient(to right, #fff, #fff);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  border: solid 1px #fff;
+  -webkit-transition: background-size .5s 0s, color .5s 0s;
+  transition: background-size .5s 0s, color .5s 0s;
 }
 
 .portfolio .content_projet .bloc_projet a:hover {
-  background-color: #fff;
+  background-size: 100% 100%;
   color: #111111;
 }
 
@@ -1033,7 +974,7 @@ header .scroll_wrapper svg:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #9E9E9E;
+  background-color: #434150;
   width: 300px;
   height: 300px;
   margin: 50px;
@@ -1067,7 +1008,7 @@ header .scroll_wrapper svg:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #9E9E9E;
+  background-color: #434150;
   width: 514px;
   height: 700px;
   margin: 50px;
@@ -1151,12 +1092,16 @@ header .scroll_wrapper svg:hover {
   text-transform: uppercase;
   padding: 15px 20px;
   border: solid 1px #111111;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  background: -webkit-gradient(linear, left top, right top, from(#111111), to(#111111));
+  background: linear-gradient(to right, #111111, #111111);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size .5s 0s, color .5s 0s;
+  transition: background-size .5s 0s, color .5s 0s;
 }
 
 .content_projet .desc_projet a:hover {
-  background-color: #111111;
+  background-size: 100% 100%;
   color: #fff;
 }
 
@@ -1248,7 +1193,7 @@ header .scroll_wrapper svg:hover {
 }
 
 .nav_projet .btn_projet_l a:hover {
-  color: #9E9E9E;
+  color: #434150;
 }
 
 .nav_projet .btn_projet_home a {
@@ -1263,7 +1208,7 @@ header .scroll_wrapper svg:hover {
 }
 
 .nav_projet .btn_projet_home a i:hover {
-  color: #9E9E9E;
+  color: #434150;
 }
 
 .nav_projet .btn_projet_r {
@@ -1287,7 +1232,7 @@ header .scroll_wrapper svg:hover {
 }
 
 .nav_projet .btn_projet_r a:hover {
-  color: #9E9E9E;
+  color: #434150;
 }
 
 .mentions h4 {

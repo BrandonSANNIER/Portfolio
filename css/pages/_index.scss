@@ -25,94 +25,38 @@ header {
         line-height: 35px;
     }
 
-    .scroll_wrapper {
+    .scroll-downs {
         position: relative;
-        left: 49%;
-        bottom: 33%;
-        transform: translateX(-49%);
-        text-align: center;
         z-index: 3;
-
-        svg {
-            fill: $color-base;
-            margin: 0 auto;
-            position: relative;
-            width: 70px;
-            height: 70px;
-            border-radius: 160px;
-            background-size: 225%;
-            animation: c 5s linear infinite, e 5s ease-out infinite;
-            transition: all .5s;
-
-            &:hover {
-                fill: $color-hover;
-            }
-
-            @keyframes c {
-                0% {
-                    background-position: 0 100%;
-                }
-
-                20% {
-                    background-position: 0 0;
-                }
-
-                21% {}
-
-                29.99% {
-                    background-position: 0 0;
-                }
-
-                30% {
-                    background-position: 0 100%;
-                }
-
-                50% {
-                    background-position: 0 0;
-                }
-
-                59% {
-                    background-position: 0 0;
-                }
-
-                60% {
-                    background-position: 0 100%;
-                }
-
-                80% {
-                    background-position: 0 0;
-                }
-
-                81% {}
-            }
-
-            @keyframes e {
-                0% {
-                    transform: translateY(0);
-                }
-
-                20% {
-                    transform: translateY(.4rem);
-                }
-
-                30% {
-                    transform: translateY(0);
-                }
-
-                50% {
-                    transform: translateY(.4rem);
-                }
-
-                60% {
-                    transform: translateY(0);
-                }
-
-                80% {
-                    transform: translateY(.4rem);
-                }
-
-                90% {
-                    transform: translateY(0);
+        top: -31%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        
+        width :34px;
+        height: 55px;
+        .mousey {
+            width: 3px;
+            padding: 10px 15px;
+            height: 35px;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            opacity: 0.75;
+            box-sizing: content-box;
+            .scroller {
+                width: 3px;
+                height: 10px;
+                border-radius: 25%;
+                background-color: #fff;
+                animation-name: scroll;
+                animation-duration: 2.2s;
+                animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+                animation-iteration-count: infinite;
+                @keyframes scroll {
+                    0% { opacity: 0; }
+                    10% { transform: translateY(0); opacity: 1; }
+                    100% { transform: translateY(15px); opacity: 0;}
                 }
             }
         }
@@ -241,16 +185,18 @@ header {
             a {
                 @include font(18px, 400, 18px, $color-primary);
                 margin-top: 70px;
-                background-color: $color-base;
                 text-transform: uppercase;
                 padding: 20px 40px;
                 text-decoration: none;
                 color: $color-primary;
+                background: linear-gradient(to right, $color-primary, $color-primary);
+                background-repeat: no-repeat;
+                background-size: 0 100%;
                 border: solid 1px $color-primary;
-                transition: all .3s;
-    
+                transition: background-size .5s 0s, color .5s 0s;
+        
                 &:hover {
-                    background-color: $color-primary;
+                    background-size: 100% 100%;
                     color: $color-base;
                 }
             }
@@ -330,16 +276,18 @@ header {
 
         input[type=submit] {
             margin-top: 10px;
-            cursor: pointer;
-            background-color: $color-base;
-            border: solid 1px $color-primary;
             text-transform: uppercase;
             padding: 20px 40px;
             @include font(18px, 400, 18px, $color-primary);
-            transition: all .3s;
+            color: $color-primary;
+            background: linear-gradient(to right, $color-primary, $color-primary);
+            background-repeat: no-repeat;
+            background-size: 0 100%;
+            border: solid 1px $color-primary;
+            transition: background-size .5s 0s, color .5s 0s;
 
             &:hover {
-                background-color: $color-primary;
+                background-size: 100% 100%;
                 color: $color-base;
             }
         }
@@ -398,7 +346,7 @@ header {
     .social_menu{
         display: none;
     }
-    .scroll_wrapper{
+    .scroll-downs{
         display: none;
     }
     .loader{

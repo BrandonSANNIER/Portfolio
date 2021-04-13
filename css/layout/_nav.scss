@@ -27,15 +27,21 @@ nav {
 
         li {
             list-style: none;
-
+            
             a {
-                @include font(19px, 400, 19px, $color-primary);
+                @include font(19px, 400, 20px, $color-primary);
+                text-decoration: none;
+                color: $color-primary;
                 width: 100%;
                 margin: 0 20px;
-                text-decoration: none;
-
-                &:hover {
-                    border-bottom: solid 1px $color-primary;
+                padding-bottom: 3px;
+                background-image: linear-gradient($color-primary, $color-primary);
+                background-size: 0 1px, auto;
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                transition: all .2s ease-out;
+                &:hover{
+                    background-size: 100% 1px, auto;
                 }
             }
         }

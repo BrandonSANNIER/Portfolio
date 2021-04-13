@@ -64,12 +64,14 @@
             text-transform: uppercase;
             padding: 15px 20px;
             border: solid 1px $color-primary;
-            transition: all .5s;
+            background: linear-gradient(to right,$color-primary,$color-primary);
+            background-repeat: no-repeat;
+            background-size: 0 100%;
+            transition: background-size .5s 0s, color .5s 0s;
 
             &:hover {
-                background-color: $color-primary;
+                background-size: 100% 100%;
                 color: $color-base;
-
             }
         }
     }
