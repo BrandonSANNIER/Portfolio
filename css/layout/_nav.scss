@@ -99,7 +99,7 @@ nav {
 
 @include lt {
     nav{
-        width: 60%;
+        width: 80%;
     }
 }
 
@@ -111,7 +111,7 @@ nav {
 
 @include t {
     nav{
-        width: 50%;
+        width: 75%;
     }
 }
 
@@ -123,6 +123,7 @@ nav {
 
 @include m {
     nav{
-        width: 60%;
+        width: 85%;
+        left: 50px;
     }
 }

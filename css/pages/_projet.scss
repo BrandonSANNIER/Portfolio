@@ -33,7 +33,9 @@
         margin-left: 40px;
         width: 50%;
 
-        p {
+        h6 {
+            font-size: 16px;
+            font-weight: 300;
             line-height: 25px;
             margin-bottom: 40px;
 
@@ -84,6 +86,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin: 200px 0;
 
     .mobile {
@@ -194,4 +197,92 @@
             }
         }
     }
+}
+
+
+
+
+//
+// ──────────────────────────────────────────────────────────────── LAPTOP L ─────
+//
+
+
+@include ltl {
+    .content_projet {
+        flex-direction: column;
+        align-items: center;
+        .mockup {
+            width: 100%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    
+        .desc_projet {
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+    
+    .mockup_mobile {
+        flex-direction: column;
+        align-items: center;
+        .mobile{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+//
+// ──────────────────────────────────────────────────────────────── LAPTOP ─────
+//
+
+
+@include lt {
+    .content_projet {
+        flex-direction: column;
+        align-items: center;
+        .mockup {
+            width: 100%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    
+        .desc_projet {
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+    
+    .mockup_mobile {
+        flex-direction: column;
+        align-items: center;
+        .mobile{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+//
+// ──────────────────────────────────────────────────────────────── TABLET ─────
+//
+
+
+@include t {
+
+}
+
+
+//
+// ──────────────────────────────────────────────────────────────── MOBILE ─────
+//
+
+
+@include m {
+
 }
