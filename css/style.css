@@ -1045,6 +1045,181 @@ header .scroll-downs .mousey .scroller {
           transform: scale(1.05);
 }
 
+.container-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-contact h3 {
+  margin-top: 90px;
+  position: relative;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #111111;
+}
+
+.container-contact h3:before {
+  position: absolute;
+  content: "";
+  top: -40px;
+  height: 0.1rem;
+  width: 7rem;
+  z-index: 1;
+  background-color: #111111;
+}
+
+.container-contact .contact-form form {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-contact .contact-form input,
+.container-contact .contact-form textarea {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 45px;
+  color: #111111;
+}
+
+.container-contact .contact-form input:focus,
+.container-contact .contact-form textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.container-contact .contact-form input[type=text],
+.container-contact .contact-form input[type=email],
+.container-contact .contact-form textarea {
+  width: 100%;
+  padding: 0 0 10px 5px;
+  border: none;
+  border-bottom: solid 1px #111111;
+  margin-bottom: 35px;
+}
+
+.container-contact .contact-form input[type=submit] {
+  margin-bottom: 100px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 30px;
+  text-transform: uppercase;
+  padding: 20px 60px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #111111;
+  color: #111111;
+  background: -webkit-gradient(linear, left top, right top, from(#111111), to(#111111));
+  background: linear-gradient(to right, #111111, #111111);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  border: solid 1px #111111;
+  -webkit-transition: background-size .5s 0s, color .5s 0s;
+  transition: background-size .5s 0s, color .5s 0s;
+}
+
+.container-contact .contact-form input[type=submit]:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.container-contact .contact-form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-contact .contact-form .row input[type=text], .container-contact .contact-form .row input[type=email] {
+  width: 45%;
+}
+
+.container-contact .contact-form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 50px;
+  max-height: 150px;
+}
+
+.container-contact .contact-form textarea:focus {
+  border-bottom: solid 1px #111111;
+}
+
+.container-contact .contact-who-i-am .content-who-i-am {
+  margin-bottom: 100px;
+}
+
+.container-contact .competence h4 {
+  margin: 30px 0 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container-contact .competence ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-contact .competence ul li {
+  list-style-type: none;
+  width: 10%;
+}
+
+.container-contact .competence ul li img {
+  width: 60%;
+}
+
+.container-contact .contact-cv {
+  margin: 150px 0;
+}
+
+.container-contact .contact-cv .cv {
+  text-decoration: none;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 30px;
+  text-transform: uppercase;
+  padding: 20px 60px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #111111;
+  color: #111111;
+  background: -webkit-gradient(linear, left top, right top, from(#111111), to(#111111));
+  background: linear-gradient(to right, #111111, #111111);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  border: solid 1px #111111;
+  -webkit-transition: background-size .5s 0s, color .5s 0s;
+  transition: background-size .5s 0s, color .5s 0s;
+}
+
+.container-contact .contact-cv .cv:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.container-contact iframe {
+  width: 100%;
+}
+
 /*--- HEADER PROJET ---*/
 .header_projet {
   text-align: center;

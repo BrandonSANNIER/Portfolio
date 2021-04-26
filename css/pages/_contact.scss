@@ -1,0 +1,141 @@
+//
+// ─────────────────────────────────────────────────────────────── CONTACT ──
+//
+
+.container-contact{
+    display: flex;
+    flex-direction: column;
+    h3 {
+        margin-top: 90px;
+        position: relative;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: $color-primary;
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: -40px;
+            height: 0.1rem;
+            width: 7rem;
+            z-index: 1;
+            background-color: $color-primary;
+        }
+    }
+    .contact-form{        
+        form{
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: column
+        }
+
+        input,
+        textarea {
+            @include font(20px, 400, 45px, $color-primary);
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea {
+            width: 100%;
+            padding: 0 0 10px 5px;
+            border: none;
+            border-bottom: solid 1px $color-primary;
+            margin-bottom: 35px;
+        }
+
+        input[type=submit] {
+            margin-bottom: 100px;
+            align-self: flex-start;
+            margin-top: 30px;
+            text-transform: uppercase;
+            padding: 20px 60px;
+            @include font(18px, 400, 18px, $color-primary);
+            color: $color-primary;
+            background: linear-gradient(to right, $color-primary, $color-primary);
+            background-repeat: no-repeat;
+            background-size: 0 100%;
+            border: solid 1px $color-primary;
+            transition: background-size .5s 0s, color .5s 0s;
+
+            &:hover {
+                background-size: 100% 100%;
+                color: $color-base;
+            }
+        }
+
+        .row{
+            display: flex;
+            justify-content: space-between;
+            input[type=text], input[type=email]{
+                width: 45%;
+            }
+        }
+
+        textarea {
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 50px;
+            max-height: 150px;
+
+            &:focus {
+                border-bottom: solid 1px $color-primary;
+            }
+        }
+    }
+    .contact-who-i-am{
+        .content-who-i-am{
+            margin-bottom: 100px;
+        }
+    }
+    .competence{
+        h4{
+            margin: 30px 0 15px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        ul{
+            display: flex;
+            li{
+                list-style-type: none;
+                width: 10%;
+                img{
+                    width: 60%;
+                }
+            } 
+        }
+        
+    }
+    .contact-cv{
+        margin: 150px 0;
+        .cv{
+            text-decoration: none;
+            align-self: flex-start;
+            margin-top: 30px;
+            text-transform: uppercase;
+            padding: 20px 60px;
+            @include font(18px, 400, 18px, $color-primary);
+            color: $color-primary;
+            background: linear-gradient(to right, $color-primary, $color-primary);
+            background-repeat: no-repeat;
+            background-size: 0 100%;
+            border: solid 1px $color-primary;
+            transition: background-size .5s 0s, color .5s 0s;
+            &:hover {
+                background-size: 100% 100%;
+                color: $color-base;
+            }
+        }
+    }
+    iframe{
+        width: 100%;
+    }
+}
