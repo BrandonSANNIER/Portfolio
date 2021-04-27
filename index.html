@@ -50,126 +50,144 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/vendors/onepage-scroll.css">
+    <link rel="stylesheet" type="text/css" href="css/vendors/splide.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
+    <div class="loader"></div>
+
+    <!--------- NAVBAR --------->
+
+    <nav>
+        <a href="index.html">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 113.77 151.78" xml:space="preserve">
+                <path d="M113.77,46c0-11.58-4.11-24.55-16.91-35.52C85.55,0.79,66.72-3.14,50,3.91V0L21.55,9.11V64.7c0,0-12.66,4.67-21.55,10.27
+                    c2.15,3.7,12.74,21.77,12.74,21.77c14.59-9.06,48.81-20.85,70.41-0.91c6.35,9.46,2.66,23.13-9.47,27.29
+                    c-10.81,3.11-21.91-2.67-23.68-16V92.34l-28.45,9.7v40.19L50,151.78v-4.12c7.48,3.43,25.85,7.59,43.19-3.77
+                    c14.58-9.55,20.51-26.44,20.51-35.91c0-21.25-9.1-29.3-10.96-32.2C102.75,75.78,113.77,64.62,113.77,46z M80.53,60
+                    c-12.29-4.54-26.62-3.07-27.06-3.02C51.3,53.99,50,50.32,50,46.35c0-10,8.11-18.11,18.11-18.11s18.11,8.11,18.11,18.11
+                    C86.23,51.73,83.85,55.9,80.53,60z" />
+            </svg>
+        </a>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--------- SOCIAL MENU --------->
+
+    <div class="social_menu">
+        <ul>
+            <li><a href="https://github.com/BrandonSANNIER" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/brandon_sannier/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://fr.linkedin.com/in/brandon-sannier-746686210" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://twitter.com/zwev62" target="_blank"><i class="fab fa-twitter" target="_blank"></i></a></li>
+        </ul>
+    </div>
+
     <main>
-        <div class="loader"></div>
 
-        <!--------- NAVBAR --------->
+        <!--------- HEADER --------->
 
-        <nav>
-            <a href="index.html#accueil">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" viewBox="0 0 113.77 151.78" xml:space="preserve">
-                    <path d="M113.77,46c0-11.58-4.11-24.55-16.91-35.52C85.55,0.79,66.72-3.14,50,3.91V0L21.55,9.11V64.7c0,0-12.66,4.67-21.55,10.27
-                        c2.15,3.7,12.74,21.77,12.74,21.77c14.59-9.06,48.81-20.85,70.41-0.91c6.35,9.46,2.66,23.13-9.47,27.29
-                        c-10.81,3.11-21.91-2.67-23.68-16V92.34l-28.45,9.7v40.19L50,151.78v-4.12c7.48,3.43,25.85,7.59,43.19-3.77
-                        c14.58-9.55,20.51-26.44,20.51-35.91c0-21.25-9.1-29.3-10.96-32.2C102.75,75.78,113.77,64.62,113.77,46z M80.53,60
-                        c-12.29-4.54-26.62-3.07-27.06-3.02C51.3,53.99,50,50.32,50,46.35c0-10,8.11-18.11,18.11-18.11s18.11,8.11,18.11,18.11
-                        C86.23,51.73,83.85,55.9,80.53,60z" />
-                </svg>
-            </a>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!--------- SOCIAL MENU --------->
-
-        <div class="social_menu">
-            <ul>
-                <li><a href="https://github.com/BrandonSANNIER" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.instagram.com/brandon_sannier/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://fr.linkedin.com/in/brandon-sannier-746686210" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://twitter.com/zwev62" target="_blank"><i class="fab fa-twitter" target="_blank"></i></a></li>
-            </ul>
-        </div>
-
-        <div id="fullpage">
-
-            <!--------- HEADER --------->
-
-            <header class="section">
-                <div class="media_header">
-                    <video data-autoplay muted loop>
-                        <source src="video/header.mp4" type="video/mp4">
-                    </video>
+        <section class="header">
+            <div class="media_header">
+                <video autoplay muted loop>
+                    <source src="video/header.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h1>Bonjour, je m'appelle Brandon SANNIER<br>Je suis développeur front-end dans le Pas-de-Calais.</h1>
+            <div class="scroll-downs">
+                <div class="mousey">
+                    <div class="scroller"></div>
                 </div>
-                <h1>Bonjour, je m'appelle Brandon SANNIER<br>Je suis développeur front-end dans le Pas-de-Calais.</h1>
-                <div class="scroll-downs">
-                    <div class="mousey">
-                        <div class="scroller"></div>
+            </div>
+        </section>
+
+        <!--------- ABOUT --------->
+
+        <section class="about">
+            <div class="content_about">
+                <h2>Je réalise des sites internet avec le souci du détail et un rendu fidèle au design.</h2>
+                <ul>
+                    <li><a href="about.html#webdesigner">01. Webdesigner Photoshop - Figma</a></li>
+                    <li><a href="about.html#integrateur">02. Intégrateur HTML - CSS - JS </i></a></li>
+                    <li><a href="about.html#wordpress">03. WordPress </i></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--------- PORTFOLIO --------->
+
+        <section class="portfolio">
+            <div class="content-portfolio">
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><a href="portfolio/webagency.html"><img src="img/portfolio/webagency.jpg" alt=""></a></li>
+                            <li class="splide__slide"><a href="portfolio/ireki.html"><img src="img/portfolio/ireki.jpg" alt=""></a></li>
+                            <li class="splide__slide"><a href="#"><img src="img/portfolio/velov.jpg" alt=""></a></li>
+                        </ul>
                     </div>
                 </div>
-            </header>
-
-            <!--------- ABOUT --------->
-
-            <section class="about section">
-                <div class="content_about">
-                    <h2>Je réalise des sites internet avec le souci du détail et un rendu fidèle au design.</h2>
-                    <ul>
-                        <li><a href="about.html#webdesigner">01. Webdesigner Photoshop - Figma</a></li>
-                        <li><a href="about.html#integrateur">02. Intégrateur HTML - CSS - JS </i></a></li>
-                        <li><a href="about.html#wordpress">03. WordPress </i></a></li>
-                    </ul>
+                <div class="btn_portfolio">
+                    <a href="portfolio.html">Portfolio</a>
                 </div>
-            </section>
-
-            <!--------- PORTFOLIO --------->
-
-            <section class="portfolio section">
-                <div class="content_portfolio">
-                    <div class="article-list">
-                        <a href="portfolio/webagency.html">
-                            <img src="img/portfolio/webagency.jpg" alt="">
-                        </a>
-                        <a href="portfolio/ireki.html">
-                            <img src="img/portfolio/ireki.jpg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="img/portfolio/velov.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="btn_portfolio">
-                        <a href="portfolio.html">Portfolio</a>
-                    </div>
-                </div>
-            </section>
-
-            <!--------- CONTACT --------->
+            </div>
             
-            <section class="contact section">
-                <div class="content_contact">
-                    <h2>Démarrons un projet ensemble.</h2>
-                    <h3>Je suis intéressé par les opportunités d'indépendant. Cependant, si vous avez d'autres demandes
-                        ou questions, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous.</h3>
-                    <form action="" method="GET">
-                        <input type="text" id="name" placeholder="Nom" required>
-                        <input type="email" id="email" placeholder="E-mail" required>
-                        <input type="text" id="sujet" placeholder="Sujet" required>
-                        <textarea id="msg" id="message" placeholder="Message" required></textarea>
-                        <input type="submit" value="Envoyer">
-                    </form>
+            <!-- <div class="content_portfolio">
+                <div class="article-list">
+                    <a href="portfolio/webagency.html">
+                        <img src="img/portfolio/webagency.jpg" alt="">
+                    </a>
+                    <a href="portfolio/ireki.html">
+                        <img src="img/portfolio/ireki.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/portfolio/velov.jpg" alt="">
+                    </a>
                 </div>
-            </section>
-        </div>
-    </main>
+                <div class="btn_portfolio">
+                    <a href="portfolio.html">Portfolio</a>
+                </div>
+            </div> -->
+        </section>
+
+        <!--------- CONTACT --------->
+        
+        <section class="contact">
+            <div class="content_contact">
+                <h2>Démarrons un projet ensemble.</h2>
+                <h3>Je suis intéressé par les opportunités d'indépendant. Cependant, si vous avez d'autres demandes
+                    ou questions, n'hésitez pas à me contacter en utilisant le formulaire ci-dessous.</h3>
+                <form action="" method="GET">
+                    <input type="text" id="name" placeholder="Nom" required>
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <input type="text" id="sujet" placeholder="Sujet" required>
+                    <textarea id="msg" id="message" placeholder="Message" required></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </section>
+    </div>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="js/vendors/fullpage.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/vendors/splide.js"></script>
+    <script src="js/vendors/jquery.onepage-scroll.js"></script>
     <script>
-        new fullpage('#fullpage', {
-            navigation: true,
-            responsiveWidth: 1025,
-            anchors: ['accueil', 'about', 'portfolio', 'contact'],
-            parallax: true
+        new Splide( '.splide' , {
+            type   : 'loop',
+            perPage: 3,
+            perMove: 2,
+            rewind: true,
+        }).mount();
+        $("main").onepage_scroll({
+            responsiveFallback: 770
         });
     </script>
 </body>

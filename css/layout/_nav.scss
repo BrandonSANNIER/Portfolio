@@ -3,17 +3,18 @@
 //
 
 
-nav {
+
+nav{
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 88%;
+    width: calc(100% - 200px);
+    margin: 0 100px;
     top: 25px;
-    left: 100px;
     line-height: 50px;
     z-index: 1;
-
+    left: 0;
     a {
         svg {
             width: 45px;
@@ -47,7 +48,6 @@ nav {
         }
     }
 }
-
 
 //
 // ────────────────────────────────────────────────────────────── SOCIAL MENU ─────
@@ -98,9 +98,6 @@ nav {
 
 
 @include lt {
-    nav{
-        width: 80%;
-    }
 }
 
 
@@ -110,9 +107,6 @@ nav {
 
 
 @include t {
-    nav{
-        width: 75%;
-    }
 }
 
 
@@ -122,8 +116,4 @@ nav {
 
 
 @include m {
-    nav{
-        width: 85%;
-        left: 50px;
-    }
 }
