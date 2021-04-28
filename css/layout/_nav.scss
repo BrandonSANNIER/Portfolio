@@ -9,8 +9,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 200px);
-    margin: 0 100px;
+    width: calc(100% - 10%);
+    margin: 0 5%;
     top: 25px;
     line-height: 50px;
     z-index: 1;
@@ -98,6 +98,10 @@ nav{
 
 
 @include lt {
+    nav{
+        width: calc(100% - 18%);
+        margin: 0 9%;
+    }
 }
 
 
@@ -111,9 +115,25 @@ nav{
 
 
 //
-// ──────────────────────────────────────────────────────────────── MOBILE ─────
+// ─────────────────────────────────────────────────────────────── MOBILE L ───
 //
 
 
-@include m {
+@include ml {
+    nav{
+        width: calc(100% - 70px);
+        margin: 0 35px;
+    }
+}
+
+//
+// ─────────────────────────────────────────────────────────────── MOBILE M ───
+//
+
+
+@include mm {
+    nav{
+        width: calc(100% - 5%);
+        margin: 0 5%;
+    }
 }

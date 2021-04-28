@@ -13,9 +13,16 @@
 // ───────────────────────────────────────────────────────── BREAKPOINTS ─────
 //
 
-// Mobile
-@mixin m {
-    @media (max-width: #{$screen-m-min}) {
+// Mobile M
+@mixin mm {
+    @media (max-width: #{$screen-mm-min}) {
+        @content;
+    }
+}
+
+// Mobile L
+@mixin ml {
+    @media (max-width: #{$screen-ml-min}) {
         @content;
     }
 }
